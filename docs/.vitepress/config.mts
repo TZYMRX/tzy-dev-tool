@@ -2,6 +2,7 @@ import { type DefaultTheme, defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
+  base: '/tzy-dev-tool/',
   lang: 'zh',
   title: "Tzy Dev Tool",
   description: '由 Vite 和 Vue 驱动的静态网站',
@@ -11,7 +12,9 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
-  head: [],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: 'https://vitepress.dev/vitepress-logo-large.webp' }],
+  ],
   vite: {
     plugins: [
       UnoCSS({
