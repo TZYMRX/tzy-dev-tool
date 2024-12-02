@@ -2,13 +2,13 @@ import { type DefaultTheme, defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 
 export default defineConfig({
-  base: '/',
+  base: '/tzy-dev-tool/',
   lang: 'zh',
   title: "Tzy Dev Tool",
   description: '由 Vite 和 Vue 驱动的静态网站',
-  rewrites: {
-    'zh/:rest*': ':rest*'
-  },
+  // rewrites: {
+  //   'zh/:rest*': ':rest*'
+  // },
   lastUpdated: true,
   cleanUrls: true,
   metaChunk: true,
